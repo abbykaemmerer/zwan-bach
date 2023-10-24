@@ -15,6 +15,10 @@ const closeMobileMenu = () => setClick(false);
     <>
         <nav className="navbar">
             <div className="navbar-container">
+                <div className='title'>
+                    <div className='camp'>CAMP</div>
+                    <div className='krahammerer'>KRAHAMMERER</div>
+                </div>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                 </div>
@@ -32,11 +36,6 @@ const closeMobileMenu = () => setClick(false);
                     <li className='nav-item'>
                         <Link to='/housing' className='nav-links' onClick={closeMobileMenu}>
                         Accommodations
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='/menu' className='nav-links-mobile' onClick={closeMobileMenu}>
-                        Menu
                         </Link>
                     </li>
                 </ul>
