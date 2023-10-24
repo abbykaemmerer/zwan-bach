@@ -22,7 +22,7 @@ function HeroSection() {
         <div>May 17 - 19, 2023</div>
       </div>
       <div id='gif'>
-        <iframe src="https://giphy.com/embed/xT1R9PD10fWEQxdDOw" frameBorder="0" class="giphy-embed" className='gif' allowFullScreen></iframe>
+        <iframe src="https://giphy.com/embed/xT1R9PD10fWEQxdDOw" frameBorder="0" class="giphy-embed" className='gif' title='baby-gif' allowFullScreen></iframe>
       </div> 
       <div>It's us. We're the babies.</div>
 
