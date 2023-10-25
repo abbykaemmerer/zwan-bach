@@ -1,0 +1,39 @@
+.itinerary-container {
+    height: calc(100vh - 80px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.itinerary-container .header {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+}
+
+.itinerary-container .group-container {
+    margin: 40px;
+}
+
+.itinerary-container .night-groups {
+    font-size: 1em;
+}
+
+.itinerary-container .night-groups ul{
+    padding: 0;
+    margin: 5px 0 25px 0;
+}
+
+.itinerary-container .night-groups li{
+    list-style-type: none;
+}
+
+.itinerary-container .night-title {
+    font-family: 'Pacifico', cursive;
+}
+
+.itinerary-container .gif-container {
+    border: 2px #2b2422 dashed;
+    padding: 15px;
+}

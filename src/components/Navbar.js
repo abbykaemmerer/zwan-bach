@@ -38,6 +38,11 @@ const closeMobileMenu = () => setClick(false);
                         Accommodations
                         </Link>
                     </li>
+                    <li className='nav-item'>
+                        <Link to='/menu' className='nav-links' onClick={closeMobileMenu}>
+                        Menu
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </nav>

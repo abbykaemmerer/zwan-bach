@@ -4,6 +4,7 @@ import Home from './components/pages/Home';
 import Itinerary from './components/Itinerary';
 import Housing from './components/Housing';
 import Menu from './components/Menu';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
           <Route path='/menu' exact element={<Menu/>} />
          </Routes>
       </Router>
-
+    <Footer></Footer>
     </div>
   );
 }

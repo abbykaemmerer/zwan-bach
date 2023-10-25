@@ -8,11 +8,7 @@
     justify-content: center;
 }
 
-.hero-content {
-    /* height: 90vh; */
-}
-
-.hero-content > h1 {
+.hero-container > h1 {
     color: #2b2422;
     display: flex;
     flex-direction: column;
@@ -21,27 +17,27 @@
     font-size: 1.75em;
 }
 
-.hero-content figure {
+.hero-container figure {
     margin: 0 40px;
 }
 
 
-.hero-content img {
+.hero-container img {
     width: 90%;
     max-width: 500px;
 }
 
-.hero-content .information {
+.hero-container .information {
     margin: 20px;
     font-size: 1.5em;
 }
 
-.hero-content #gif .gif {
+.hero-container #gif .gif {
     border-radius: 50%;
     width: 65%;
 }
 
-.hero-content .babies-div {
+.hero-container .babies-div {
     margin: 20px 0;
 }
 

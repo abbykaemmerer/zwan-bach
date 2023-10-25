@@ -6,7 +6,6 @@ import '../App.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <div className='hero-content'>
         <h1 className='header'>
           <span>Welcome</span>
           <span>Campers</span> 
@@ -26,7 +25,6 @@ function HeroSection() {
           <iframe src="https://giphy.com/embed/xT1R9PD10fWEQxdDOw" frameBorder="0" className="giphy-embed gif" title='baby-gif' allowFullScreen></iframe>
         </div> 
         <div className='babies-div'>It's us. We're the babies.</div>
-      </div>
     </div>
   );
 }
