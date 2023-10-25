@@ -9,32 +9,70 @@
 }
 
 .itinerary-container .header {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2em;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 3em;
+    color: #e37b39;
 }
 
 .itinerary-container .group-container {
-    margin: 40px;
+    margin: 20px;
 }
 
 .itinerary-container .night-groups {
     font-size: 1em;
+    border: 1px solid #2b2422;
+    height: 200px;
+    box-shadow: 6px 6px 6px 2px #2b2422;
+    background: #fff;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .itinerary-container .night-groups ul{
     padding: 0;
     margin: 5px 0 25px 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 
 .itinerary-container .night-groups li{
     list-style-type: none;
+    margin: 5px;;
 }
 
 .itinerary-container .night-title {
     font-family: 'Pacifico', cursive;
+    background-color: #2b2422;
+    color: #fff;
+
 }
 
 .itinerary-container .gif-container {
     border: 2px #2b2422 dashed;
     padding: 15px;
 }
+
+@media (min-width: 768px) {
+    .itinerary-container .group-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .itinerary-container .night-groups {
+        width: 250px;
+    }
+
+    /* .itinerary-container .night-groups .night-title {
+        width: 50%;
+        font-size: 1.25em;
+    }
+    
+    .itinerary-container .night-groups ul{
+        margin: 0;
+        width: 50%;
+        text-align: left;
+    } */
+  }

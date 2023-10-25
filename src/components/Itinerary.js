@@ -31,9 +31,9 @@ function Itinerary() {
           </ul>
         </div>
       </div>
-      <div className='gif-container'>
+      {/* <div className='gif-container'>
         <iframe src="https://giphy.com/embed/l4FGoqQEuWwa02zQI" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-      </div>
+      </div> */}
     </div>
   )
 }
