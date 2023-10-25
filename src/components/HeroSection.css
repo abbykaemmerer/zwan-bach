@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px 0;
+    /* margin: 50px 0; */
 }
 
 .hero-container > h1 {
@@ -15,16 +15,24 @@
     flex-direction: column;
     font-family: 'Inclusive Sans', sans-serif;
     margin: 20px;
+    font-size: 1.75em;
 }
 
+.hero-container figure {
+    margin: 0 40px;
+}
+
+
 .hero-container img {
-    width: 100%;
+    width: 90%;
+    max-width: 500px;
 }
 
 .hero-container .information {
     margin: 20px;
     font-size: 1.5em;
 }
+
 .hero-container #gif {
     margin: 20px 0 0 0;
 }
