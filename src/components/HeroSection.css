@@ -1,6 +1,6 @@
 
 .hero-container {
-    height: calc(100vh - 120px);
+    height: calc(100% - 120px);
      /* 120px = 80px nav + 40px footer */
     width: 100%;
     display: flex;
