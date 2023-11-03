@@ -10,12 +10,12 @@
 
 .itinerary-container .header {
     font-family: 'Inclusive Sans', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     color: #e37b39;
 }
 
 .itinerary-container .group-container {
-    margin: 20px;
+    margin: 0 20px;
 }
 
 .itinerary-container .night-groups {
