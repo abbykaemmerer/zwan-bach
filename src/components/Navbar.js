@@ -34,8 +34,8 @@ const closeMobileMenu = () => setClick(false);
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/housing' className='nav-links' onClick={closeMobileMenu}>
-                        Accommodations
+                        <Link to='/MessageBoard' className='nav-links' onClick={closeMobileMenu}>
+                        RSVP
                         </Link>
                     </li>
                     <li className='nav-item'>
