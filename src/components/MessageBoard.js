@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './MessageBoard.css';
 import Draggable from "react-draggable";
 import { v4 as uuidv4 } from "uuid";
+import { useForm, ValidationError } from '@formspree/react';
 
 function MessageBoard() {
   var randomColor = require("randomcolor");
@@ -47,15 +48,56 @@ useEffect(() => {
   setItems(items.filter((item) => item.id !== id));
 };
 
-  return (
-    <div className='housing-container'>
-      <input
-      value={item}
-      onChange={(e) => setItem(e.target.value)}
-      placeholder="Enter something..."
-      onKeyPress={(e) => keyPress(e)}
-      ></input>
-    <button onClick={newItem}>ENTER</button>
+const [state, handleSubmit] = useForm("xqkvvygp");
+const yes = document.getElementById('yes-rsvp');
+const no = document.getElementById('no-rsvp');
+
+if (state.succeeded && yes.checked) {
+      return <p>Can't wait to see you!</p>;
+} else if (state.succeeded && no.checked) {
+  return <p>We'll miss you!</p>;
+} return (
+    <div className='message-board-container'>
+      <div className="rsvp-container">
+        <form onSubmit={handleSubmit}>
+        <label htmlFor="name">
+          Camper:
+        </label>
+        <input
+          id="name"
+          type="name" 
+          name="name"
+        />
+        <div id="wrapper">
+          Can you attend?
+        <div className="radio">
+          <label>
+            <input id="yes-rsvp" name="rsvp" type="radio" value="yes"/>
+            YES
+          </label>
+        </div>
+        <div className="radio">
+          <label>
+            <input id="no-rsvp" name="rsvp" type="radio" value="no" />
+            No :(
+          </label>
+        </div>
+        </div>
+        <button type="submit" disabled={state.submitting}>
+          Submit
+        </button>
+        </form>
+      </div>
+      <div>
+        <div className="post-input">
+          <input
+            value={item}
+            onChange={(e) => setItem(e.target.value)}
+            placeholder="Anything else to say?"
+            onKeyPress={(e) => keyPress(e)}
+            ></input>
+          <button onClick={newItem}>Pin it</button>
+        </div>
     {items.map((item, index) => {
         return (
           <Draggable
@@ -74,6 +116,8 @@ useEffect(() => {
           </Draggable>
         );
       })}
+
+      </div>
     </div>
   )
 }
